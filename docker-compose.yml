@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  nginx-all200:
+    build: 
+      context: ./nginx-all200/
+      labels:
+        - com.example.vendor=ACME Incorporated 
+    image: nginx-all200:latest
+    ports:
+      - 80:80

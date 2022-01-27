@@ -1,0 +1,19 @@
+schemaVersion: 2.0.0
+
+globalEnvVars:
+  - key: VIRTUAL_ENV
+    value: /env
+
+commandTests:
+  - name: "say hello world"
+    command: "sh"
+    args:
+      - -c
+      - |
+        echo hello &&
+        echo world
+
+metadataTest:
+  labels:
+    - key: com.example.vendor
+      value: ACME Incorporated
